@@ -1,0 +1,128 @@
+{
+  "metadata": {
+    "title": "Speed | Automação e integração de sistemas para terminais",
+    "description": "Otimize o acesso de veículos e vagões aos terminais com operações simplificadas: caminhões mais ágeis, mais segurança e menos filas."
+  },
+  "nav": {
+    "home": "Página inicial Speed",
+    "items": ["Sobre", "Soluções", "Contato"],
+    "selectLanguage": "Selecionar idioma",
+    "cta": "Entre em contato"
+  },
+  "hero": {
+    "title": "Automação e Integração de Sistemas",
+    "description": "Otimize o acesso de veículos e vagões aos terminais com operações simplificadas: caminhões mais ágeis, mais segurança e menos filas.",
+    "cta": "Peça uma demonstração",
+    "tags": ["Controles de acesso", "Automações", "Seguindo Normas da RFB"],
+    "qrAlt": "QR code"
+  },
+  "products": {
+    "title": "O que a Speed oferece para o seu terminal",
+    "description": "Tecnologia de ponta a ponta para o controle de acesso, a automação e a integração das operações do seu terminal.",
+    "items": [
+      {
+        "name": "Gate Operating System (GOS)",
+        "tagline": "Precisão superior a 95% na identificação.",
+        "features": [
+          { "title": "Validação de lacres em tempo real", "desc": "Confere lacres manifestados versus lacres apurados." },
+          { "title": "Reconhecimento facial de motoristas", "desc": "Precisão acima de 99% para identificação segura." },
+          { "title": "Integração com sistemas de pesagem", "desc": "Integração direta e nativa com sistemas legados." }
+        ]
+      },
+      {
+        "name": "Acesso Ferroviário com OCR",
+        "tagline": "Automação completa do acesso ferroviário.",
+        "features": [
+          { "title": "Leitura automatizada de vagões e contêineres", "desc": "Identificação instantânea com imagens e dados de cada vagão." },
+          { "title": "Automatize o processo de pesagem", "desc": "Integração com balanças dinâmicas e estáticas." },
+          { "title": "Integração ao sistema operacional do terminal", "desc": "Integração transparente com TOS, WMS e ERP." },
+          { "title": "Gestão de exceções e rastreabilidade visual", "desc": "Acesse imagens e dados capturados para verificar divergências e facilitar o tratamento." }
+        ]
+      }
+    ],
+    "integration": {
+      "title": "Integração documental e operacional",
+      "features": [
+        { "title": "Integração documental automática", "desc": "Conciliação com CT-e e NF-e para liberação." },
+        { "title": "Conexão direta com TMS", "desc": "Sincronização com o planejamento de transporte." },
+        { "title": "Definição inteligente de slots", "desc": "Integração com áreas operacionais para liberar acesso." },
+        { "title": "Integração com sistemas legados", "desc": "Compatível com TOS, WMS e ERP do terminal." },
+        { "title": "Operação fluida e rastreável", "desc": "Acesso validado e controle total sobre os slots." }
+      ]
+    }
+  },
+  "cardSection": {
+    "title": "Tenha um cartão que você adiciona à carteira em minutos",
+    "cta": "Peça o cartão"
+  },
+  "currency": {
+    "title": "Adicione moeda local. Receba dólares. Saque quando quiser.",
+    "description": "Movimente dinheiro, mantenha em dólares e saque localmente quando precisar."
+  },
+  "network": {
+    "eyebrow": "A infraestrutura por trás da Speed One",
+    "title": "Feito para dinheiro que circula globalmente.",
+    "description": "A Speed One roda na rede Speed, uma blockchain criada para tornar os pagamentos com stablecoins rápidos, confiáveis e de baixo custo em escala global.",
+    "primaryCta": "Explorar a rede",
+    "secondaryCta": "Ver documentação"
+  },
+  "startSpending": {
+    "one": "One",
+    "title": "Comece a usar em minutos",
+    "cta": "Baixar no iOS"
+  },
+  "footer": {
+    "columns": [
+      { "title": "Produtos", "links": ["Pessoal", "Lite", "Core", "Platinum", "Empresas"] },
+      { "title": "Rede", "links": ["Chain", "Parceiros", "Documentação"] },
+      { "title": "Aprenda", "links": ["Central de aprendizado"] },
+      { "title": "Empresa", "links": ["Sobre", "Carreiras", "Blog", "Marca"] },
+      { "title": "Redes sociais", "links": ["Linkedin", "X (Twitter)"] }
+    ],
+    "disclaimers": [
+      "A Speed é uma empresa de tecnologia financeira, não uma instituição financeira regulada, banco, prestadora de serviços de pagamento ou consultora de investimentos.",
+      "Aplicável a países e estabelecimentos onde cartões Visa são aceitos. O Cartão Speed One é emitido sob licença da Visa.",
+      "Serviços de conta global são fornecidos por parceiros bancários terceiros e variam por região.",
+      "A Speed não custodia seus ativos. Saldos em stablecoin não são depósitos bancários e o valor de qualquer cripto ativo pode chegar a zero.",
+      "As taxas de cashback e rendimento variam por nível de membro. As taxas são variáveis e estão sujeitas a alterações.",
+      "Os recursos de rendimento dão acesso a protocolos DeFi de terceiros. Os fundos não são segurados nem garantidos e podem perder valor.",
+      "Transferências sem taxa referem-se às rotas da Speed; taxas de terceiros podem ser aplicadas.",
+      "Produtos de stablecoin e rendimento não são cobertos por esquemas de proteção de depósitos ou de compensação a investidores.",
+      "Limites geográficos, regulatórios e outros de elegibilidade se aplicam e estão sujeitos a alterações."
+    ],
+    "bottomLinks": [
+      "Suas escolhas de privacidade",
+      "Aviso legal (UK)",
+      "Política de Privacidade",
+      "Política de Cookies",
+      "Termos de Serviço"
+    ],
+    "androidComingSoon": "Android em breve",
+    "qrAlt": "QR code para baixar o app da Speed",
+    "copyright": "©2026 Speed, Todos os direitos reservados"
+  },
+  "screens": {
+    "balance": {
+      "totalBalance": "Saldo total",
+      "earning": "Ganhando {amount} este mês",
+      "addCash": "Adicionar",
+      "send": "Enviar",
+      "today": "Hoje"
+    },
+    "addFunds": {
+      "title": "Adicionar fundos",
+      "stablecoins": "Stablecoins",
+      "tokens": "Tokens",
+      "cashDeposit": "Depósito em dinheiro"
+    },
+    "card": {
+      "virtual": "Virtual",
+      "physical": "Físico",
+      "holdNearReader": "Aproxime do leitor"
+    }
+  },
+  "languageSwitcher": {
+    "label": "Idioma",
+    "names": { "pt": "Português", "en": "English", "es": "Español" }
+  }
+}

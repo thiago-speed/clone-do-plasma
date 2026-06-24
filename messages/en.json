@@ -1,0 +1,128 @@
+{
+  "metadata": {
+    "title": "Speed | Automation and systems integration for terminals",
+    "description": "Optimize vehicle and railcar access to terminals with simplified operations: faster trucks, more security and shorter queues."
+  },
+  "nav": {
+    "home": "Speed home",
+    "items": ["About", "Solutions", "Contact"],
+    "selectLanguage": "Select language",
+    "cta": "Get early access"
+  },
+  "hero": {
+    "title": "Automation and Systems Integration",
+    "description": "Optimize vehicle and railcar access to terminals with simplified operations: faster trucks, more security and shorter queues.",
+    "cta": "Get in touch",
+    "tags": ["Access control", "Automation", "Compliant with RFB rules"],
+    "qrAlt": "QR code to download the Speed app"
+  },
+  "products": {
+    "title": "What Speed delivers for your terminal",
+    "description": "End-to-end technology for access control, automation and integration of your terminal operations.",
+    "items": [
+      {
+        "name": "Gate Operating System (GOS)",
+        "tagline": "Over 95% identification accuracy.",
+        "features": [
+          { "title": "Real-time seal validation", "desc": "Checks manifested seals against verified seals." },
+          { "title": "Driver facial recognition", "desc": "Over 99% accuracy for secure identification." },
+          { "title": "Integration with weighing systems", "desc": "Direct, native integration with legacy systems." }
+        ]
+      },
+      {
+        "name": "Railway Access with OCR",
+        "tagline": "Full automation of railway access.",
+        "features": [
+          { "title": "Automated reading of railcars and containers", "desc": "Instant identification with images and data for each railcar." },
+          { "title": "Automate the weighing process", "desc": "Integration with dynamic and static scales." },
+          { "title": "Integration with the terminal operating system", "desc": "Seamless integration with TOS, WMS and ERP." },
+          { "title": "Exception management and visual traceability", "desc": "Access captured images and data to check discrepancies and ease handling." }
+        ]
+      }
+    ],
+    "integration": {
+      "title": "Documental and operational integration",
+      "features": [
+        { "title": "Automatic document integration", "desc": "Reconciliation with CT-e and NF-e for release." },
+        { "title": "Direct connection to TMS", "desc": "Synchronization with transport planning." },
+        { "title": "Smart slot scheduling", "desc": "Integration with operational areas to grant access." },
+        { "title": "Integration with legacy systems", "desc": "Compatible with the terminal's TOS, WMS and ERP." },
+        { "title": "Smooth and traceable operation", "desc": "Validated access and full control over slots." }
+      ]
+    }
+  },
+  "cardSection": {
+    "title": "Get a card you can add to your wallet in minutes",
+    "cta": "Get the card"
+  },
+  "currency": {
+    "title": "Add local currency. Get dollars. Withdraw any time.",
+    "description": "Move money in, keep it in dollars, and withdraw locally when you need it."
+  },
+  "network": {
+    "eyebrow": "The infrastructure behind Speed One",
+    "title": "Built for money that moves globally.",
+    "description": "Speed One runs on the Speed network, a purpose-built blockchain designed to make stablecoin payments fast, reliable, and low-cost at global scale.",
+    "primaryCta": "Explore Network",
+    "secondaryCta": "See Documentation"
+  },
+  "startSpending": {
+    "one": "One",
+    "title": "Start spending in minutes",
+    "cta": "Download on iOS"
+  },
+  "footer": {
+    "columns": [
+      { "title": "Products", "links": ["Personal", "Lite", "Core", "Platinum", "Business"] },
+      { "title": "Network", "links": ["Chain", "Partners", "Documentation"] },
+      { "title": "Learn", "links": ["Learn Center"] },
+      { "title": "Company", "links": ["About", "Careers", "Blog", "Brand"] },
+      { "title": "Socials", "links": ["Linkedin", "X (Twitter)"] }
+    ],
+    "disclaimers": [
+      "Speed is a financial technology company, not a regulated financial institution, bank, money services business or investment advisor.",
+      "Applicable to countries and merchants where Visa cards are accepted. The Speed One Card is issued pursuant to a license from Visa.",
+      "Global account services are powered by third-party banking partners and vary by region.",
+      "Speed does not custody your assets. Stablecoin balances are not bank deposits and the value of any crypto asset may go to zero.",
+      "Cashback and yield rates vary by member tier. Rates are variable and subject to change.",
+      "Earn features provide access to third-party DeFi protocols. Funds are not insured or guaranteed and may lose value.",
+      "Zero-fee transfers refer to Speed routes; third-party fees may apply.",
+      "Stablecoin and yield products are not covered by deposit protection or investor compensation schemes.",
+      "Geographic, regulatory, and other eligibility limits apply, and are subject to change."
+    ],
+    "bottomLinks": [
+      "Your privacy choices",
+      "UK Disclaimer",
+      "Privacy Policy",
+      "Cookie Policy",
+      "Terms of Service"
+    ],
+    "androidComingSoon": "Android coming soon",
+    "qrAlt": "QR code to download the Speed app",
+    "copyright": "©2026 Speed, All Rights Reserved"
+  },
+  "screens": {
+    "balance": {
+      "totalBalance": "Total Balance",
+      "earning": "Earning {amount} this month",
+      "addCash": "Add Cash",
+      "send": "Send",
+      "today": "Today"
+    },
+    "addFunds": {
+      "title": "Add funds",
+      "stablecoins": "Stablecoins",
+      "tokens": "Tokens",
+      "cashDeposit": "Cash deposit"
+    },
+    "card": {
+      "virtual": "Virtual",
+      "physical": "Physical",
+      "holdNearReader": "Hold Near Reader"
+    }
+  },
+  "languageSwitcher": {
+    "label": "Language",
+    "names": { "pt": "Português", "en": "English", "es": "Español" }
+  }
+}
