@@ -2,6 +2,7 @@ import { setRequestLocale } from 'next-intl/server'
 import type { Locale } from '@/i18n/routing'
 import { SiteHeader } from '@/components/layout/site-header'
 import { Hero } from '@/components/sections/hero'
+import { HeroProductsBlend } from '@/components/sections/hero-products-blend'
 import { Products } from '@/components/sections/products'
 import { CardSection } from '@/components/sections/card-section'
 import { CurrencySection } from '@/components/sections/currency-section'
@@ -21,6 +22,7 @@ export default async function Page({
     <main className="bg-background">
       <SiteHeader variant="dark" />
       <Hero />
+      <HeroProductsBlend />
       <Products />
       <CardSection />
       <CurrencySection />

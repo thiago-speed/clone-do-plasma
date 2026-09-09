@@ -14,7 +14,7 @@ export function Hero() {
   const { containerRef, videoRef } = useScrollVideo(siteConfig.assets.heroVideo)
 
   return (
-    <section id="hero" ref={containerRef} className="relative h-[300vh] w-full">
+    <section id="hero" ref={containerRef} className="relative h-[300vh] w-full bg-neutral-950">
       <div className="sticky top-0 h-screen w-full overflow-hidden">
         <video
           ref={videoRef}
@@ -25,7 +25,11 @@ export function Hero() {
         >
           <source src={siteConfig.assets.heroVideo} type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/40" />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-neutral-950 via-neutral-950/60 to-transparent"
+        />
 
         <div className="relative mx-auto flex h-screen max-w-[1600px] flex-col justify-end px-5 pb-16 lg:px-12 lg:pb-20">
           <h1 className="max-w-3xl text-balance text-5xl font-medium leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-7xl">

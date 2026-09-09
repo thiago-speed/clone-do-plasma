@@ -1,13 +1,10 @@
 import Image from "next/image"
-import { Truck, TrainFront } from "lucide-react"
 import { useTranslations } from "next-intl"
 import { Reveal } from "@/components/shared/reveal"
 
 type Feature = { title: string; desc: string }
 type Product = { name: string; tagline: string; features: Feature[] }
 type Integration = { title: string; features: Feature[] }
-
-const productIcons = [Truck, TrainFront]
 
 function FeatureList({ features }: { features: Feature[] }) {
   return (
@@ -34,11 +31,9 @@ function FeatureList({ features }: { features: Feature[] }) {
 function ProductPanel({
   product,
   index,
-  Icon,
 }: {
   product: Product
   index: number
-  Icon: typeof Truck
 }) {
   const reversed = index % 2 === 1
 
@@ -46,11 +41,7 @@ function ProductPanel({
     <Reveal className="overflow-hidden rounded-3xl bg-gradient-to-b from-neutral-800/70 to-neutral-900/55 shadow-xl shadow-black/25 ring-1 ring-white/5 backdrop-blur-sm">
       <div className="grid grid-cols-1 gap-8 p-8 lg:grid-cols-2 lg:items-center lg:gap-16 lg:p-12">
         <div className={reversed ? "lg:order-2" : ""}>
-          <Icon
-            className={`h-8 w-8 ${reversed ? "text-brand-blue" : "text-brand-green"}`}
-            strokeWidth={1.5}
-          />
-          <h3 className="mt-5 text-balance text-3xl font-medium leading-[1.1] tracking-tight text-white sm:text-4xl">
+          <h3 className="text-balance text-3xl font-medium leading-[1.1] tracking-tight text-white sm:text-4xl">
             {product.name}
           </h3>
           <p className="mt-4 max-w-md text-pretty leading-relaxed text-neutral-400">
@@ -74,27 +65,30 @@ export function Products() {
   const integration = t.raw("integration") as Integration
 
   return (
-    <section className="relative isolate overflow-hidden bg-neutral-900 py-20 lg:py-28">
-      <Image
-        src="/containers.png"
-        alt=""
-        aria-hidden="true"
-        fill
-        sizes="100vw"
-        className="-z-20 object-cover opacity-[0.90]"
-      />
+    <section className="relative -mt-24 overflow-hidden pt-24 pb-20 lg:pb-28">
+      <div aria-hidden className="absolute inset-x-0 -top-24 bottom-0 z-0">
+        <Image
+          src="/background-container.png"
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover object-top brightness-[1.02]"
+        />
+      </div>
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-gradient-to-b from-neutral-900/80 via-neutral-950/85 to-black"
+        className="pointer-events-none absolute inset-x-0 -top-24 bottom-0 z-[1] bg-[linear-gradient(to_bottom,#0a0a0a_0%,#0a0a0a_10%,rgba(10,10,10,0.85)_20%,rgba(23,23,23,0.52)_38%,rgba(0,0,0,0.58)_100%)]"
       />
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-64 bg-gradient-to-b from-black to-transparent"
-      />
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
+      <div className="relative z-10 mx-auto max-w-7xl px-5 lg:px-8">
         <Reveal className="mx-auto flex max-w-2xl flex-col items-center text-center">
           <h2 className="text-balance text-4xl font-medium leading-[1.05] tracking-tight text-white sm:text-5xl">
-            {t("title")}
+            {t.rich("title", {
+              speed: (chunks) => (
+                <span className="font-display text-[0.78em] font-bold tracking-[0.06em] text-brand-green">
+                  {chunks}
+                </span>
+              ),
+            })}
           </h2>
           <p className="mt-6 text-pretty leading-relaxed text-neutral-400">
             {t("description")}
@@ -107,7 +101,6 @@ export function Products() {
               key={product.name}
               product={product}
               index={i}
-              Icon={productIcons[i] ?? Truck}
             />
           ))}
         </div>
