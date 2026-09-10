@@ -1,84 +1,112 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { Menu, X } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useLenis } from "lenis/react"
 import { SpeedLogo } from "@/components/layout/speed-logo"
 import { LanguageSwitcher } from "@/components/layout/language-switcher"
 import { Link } from "@/i18n/navigation"
+import { SmoothAnchor } from "@/components/landing/smooth-anchor"
+import { PillButton } from "@/components/landing/pill-button"
 import { siteConfig } from "@/config/site"
 
-export function SiteHeader({ variant = "light" }: { variant?: "light" | "dark" }) {
+type NavItem = { label: string; href: string }
+
+export function SiteHeader() {
   const t = useTranslations("nav")
-  const navItems = t.raw("items") as string[]
+  const items = t.raw("items") as NavItem[]
   const [scrolled, setScrolled] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  useLenis((lenis) => {
+    const next = lenis.scroll > window.innerHeight * 0.7
+    setScrolled((prev) => (prev === next ? prev : next))
+  })
 
   useEffect(() => {
-    const getHeroEnd = () => {
-      const hero = document.getElementById("hero")
-      if (!hero) return 0
-      return hero.offsetTop + hero.offsetHeight - window.innerHeight
-    }
-
     const onScroll = () => {
-      const heroEnd = getHeroEnd()
-      const scrollY = window.scrollY
-
-      // Hero sticky: o scroll só faz o scrubbing do vídeo, o layout fica fixo.
-      // O efeito glass ativa quando o hero solta e a página realmente rola.
-      setScrolled(scrollY >= heroEnd)
+      const next = window.scrollY > window.innerHeight * 0.7
+      setScrolled((prev) => (prev === next ? prev : next))
     }
-
     onScroll()
     window.addEventListener("scroll", onScroll, { passive: true })
-    window.addEventListener("resize", onScroll)
-    return () => {
-      window.removeEventListener("scroll", onScroll)
-      window.removeEventListener("resize", onScroll)
-    }
+    return () => window.removeEventListener("scroll", onScroll)
   }, [])
 
-  // Mantém sempre as cores do estado sobre o vídeo (texto branco + glass escuro),
-  // independentemente da seção sob a navbar.
-  const onDark = variant === "dark"
-  const textColor = onDark ? "text-white" : "text-foreground"
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : ""
+    return () => {
+      document.body.style.overflow = ""
+    }
+  }, [menuOpen])
+
+  const onDark = !scrolled
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-[background-color,backdrop-filter,border-color,box-shadow] duration-500 ease-out ${
-        scrolled
-          ? onDark
-            ? "border-b border-white/10 bg-white/10 shadow-lg shadow-black/5 backdrop-blur-2xl backdrop-saturate-150"
-            : "border-b border-border/40 bg-background/55 shadow-lg shadow-black/5 backdrop-blur-2xl backdrop-saturate-150"
-          : "border-b border-transparent bg-transparent shadow-none backdrop-blur-none backdrop-saturate-100"
-      }`}
+      className="site-header fixed inset-x-0 top-0 z-50 border-b text-white"
     >
-      <div className="mx-auto flex h-16 max-w-[1600px] items-center justify-between px-5 lg:px-12">
-        <Link href="/" className={textColor} aria-label={t("home")}>
-          <SpeedLogo />
+      <div className="mx-auto flex h-20 max-w-[1480px] items-center justify-between px-4 min-[810px]:px-6 min-[1200px]:px-6">
+        <Link href="/" className="text-current" aria-label={t("home")}>
+          <SpeedLogo textClassName="text-current" />
         </Link>
 
-        <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-8 md:flex">
-          {navItems.map((item) => (
-            <a
-              key={item}
-              href={siteConfig.links.nav}
-              className={`text-[15px] transition-opacity hover:opacity-60 ${textColor}`}
+        <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-8 min-[810px]:flex">
+          {items.map((item) => (
+            <SmoothAnchor
+              key={item.href}
+              href={item.href}
+              className="text-[15px] text-current transition-opacity hover:opacity-60"
             >
-              {item}
-            </a>
+              {item.label}
+            </SmoothAnchor>
           ))}
         </nav>
 
-        <div className="flex items-center gap-4">
-          <LanguageSwitcher className={textColor} />
-          <a
+        <div className="flex items-center gap-3">
+          <LanguageSwitcher className="block text-current" />
+          <PillButton
             href={siteConfig.links.headerCta}
-            className="rounded-full bg-brand-green px-5 py-2.5 text-[15px] font-medium text-neutral-900 transition-transform hover:scale-[1.03]"
+            tone={onDark ? "light" : "dark"}
+            className="hidden min-[810px]:inline-flex"
           >
             {t("cta")}
-          </a>
+          </PillButton>
+          <button
+            type="button"
+            className="rounded-full p-2 text-current min-[810px]:hidden"
+            aria-label={menuOpen ? t("close") : t("menu")}
+            onClick={() => setMenuOpen((open) => !open)}
+          >
+            {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
         </div>
       </div>
+
+      {menuOpen ? (
+        <div className="min-[810px]:hidden">
+          <div className="flex flex-col gap-6 bg-white px-6 py-8 text-black">
+            {items.map((item) => (
+              <SmoothAnchor
+                key={item.href}
+                href={item.href}
+                className="text-lg"
+                onClick={() => setMenuOpen(false)}
+              >
+                {item.label}
+              </SmoothAnchor>
+            ))}
+            <PillButton
+              href={siteConfig.links.headerCta}
+              tone="dark"
+              onClick={() => setMenuOpen(false)}
+            >
+              {t("cta")}
+            </PillButton>
+          </div>
+        </div>
+      ) : null}
     </header>
   )
 }

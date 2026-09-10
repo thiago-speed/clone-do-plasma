@@ -38,7 +38,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
         aria-expanded={open}
         onClick={() => setOpen((v) => !v)}
         className={cn(
-          "hidden rounded-full p-1.5 transition-opacity hover:opacity-60 sm:block",
+          "rounded-full p-1.5 transition-opacity hover:opacity-60",
           className,
         )}
       >

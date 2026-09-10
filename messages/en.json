@@ -1,125 +1,207 @@
 {
   "metadata": {
-    "title": "Speed | Automation and systems integration for terminals",
-    "description": "Optimize vehicle and railcar access to terminals with simplified operations: faster trucks, more security and shorter queues."
+    "title": "Speed | Gate Operating System (GOS)",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gate Operating System (GOS)."
   },
   "nav": {
     "home": "Speed home",
-    "items": ["About", "Solutions", "Contact"],
-    "selectLanguage": "Select language",
-    "cta": "Get early access"
+    "cta": "Lorem ipsum",
+    "menu": "Open menu",
+    "close": "Close menu",
+    "items": [
+      { "label": "Flow", "href": "#services" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "About", "href": "#about" },
+      { "label": "Contact", "href": "#cta-section" }
+    ]
   },
   "hero": {
-    "title": "Automation and Systems Integration",
-    "description": "Optimize vehicle and railcar access to terminals with simplified operations: faster trucks, more security and shorter queues.",
-    "cta": "Get in touch",
-    "tags": ["Access control", "Automation", "Compliant with RFB rules"],
-    "qrAlt": "QR code to download the Speed app"
+    "product": "GOS",
+    "title": "Gate Operating System",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "cta": "Lorem ipsum",
+    "proof": "Lorem ipsum dolor sit amet"
   },
-  "products": {
-    "title": "What <speed>Speed</speed> delivers for your terminal",
-    "description": "End-to-end technology for access control, automation and integration of your terminal operations.",
+  "features": {
+    "title": "Lorem ipsum",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "items": [
       {
-        "name": "Gate Operating System (GOS)",
-        "tagline": "Over 95% identification accuracy.",
-        "features": [
-          { "title": "Real-time seal validation", "desc": "Checks manifested seals against verified seals." },
-          { "title": "Driver facial recognition", "desc": "Over 99% accuracy for secure identification." },
-          { "title": "Integration with weighing systems", "desc": "Direct, native integration with legacy systems." }
-        ]
+        "stat": "95%",
+        "title": "Lorem ipsum dolor",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
       },
       {
-        "name": "Railway Access with OCR",
-        "tagline": "Full automation of railway access.",
-        "features": [
-          { "title": "Automated reading of railcars and containers", "desc": "Instant identification with images and data for each railcar." },
-          { "title": "Automate the weighing process", "desc": "Integration with dynamic and static scales." },
-          { "title": "Integration with the terminal operating system", "desc": "Seamless integration with TOS, WMS and ERP." },
-          { "title": "Exception management and visual traceability", "desc": "Access captured images and data to check discrepancies and ease handling." }
-        ]
+        "stat": "24/7",
+        "title": "Sit amet consectetur",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi."
+      },
+      {
+        "stat": "3x",
+        "title": "Adipiscing elit sed",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."
       }
-    ],
-    "integration": {
-      "title": "Documental and operational integration",
-      "features": [
-        { "title": "Automatic document integration", "desc": "Reconciliation with CT-e and NF-e for release." },
-        { "title": "Direct connection to TMS", "desc": "Synchronization with transport planning." },
-        { "title": "Smart slot scheduling", "desc": "Integration with operational areas to grant access." },
-        { "title": "Integration with legacy systems", "desc": "Compatible with the terminal's TOS, WMS and ERP." },
-        { "title": "Smooth and traceable operation", "desc": "Validated access and full control over slots." }
-      ]
-    }
+    ]
   },
-  "cardSection": {
-    "title": "Get a card you can add to your wallet in minutes",
-    "cta": "Get the card"
+  "projects": {
+    "title": "Lorem projects",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "marquee": ["Lorem", "Ipsum", "Dolor", "Sit", "Amet", "Consectetur", "Adipiscing"],
+    "items": [
+      { "title": "Lorem ipsum", "tag": "Dolor sit" },
+      { "title": "Consectetur elit", "tag": "Amet" },
+      { "title": "Sed eiusmod", "tag": "Tempor" },
+      { "title": "Labore dolore", "tag": "Magna" }
+    ]
   },
-  "currency": {
-    "title": "Add local currency. Get dollars. Withdraw any time.",
-    "description": "Move money in, keep it in dollars, and withdraw locally when you need it."
+  "expertise": {
+    "title": "The driver flow at the port",
+    "description": "Gate Operating System (GOS). Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "cta": "Lorem ipsum",
+    "mediaAlt": "Step placeholder {number}",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Lorem ipsum dolor",
+        "tagline": "Sit amet consectetur",
+        "stat": "80+",
+        "statLabel": "Lorem",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "number": "02",
+        "title": "Consectetur adipiscing",
+        "tagline": "Elit sed eiusmod",
+        "stat": "50+",
+        "statLabel": "Ipsum",
+        "body": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      },
+      {
+        "number": "03",
+        "title": "Tempor incididunt",
+        "tagline": "Ut labore dolore",
+        "stat": "25+",
+        "statLabel": "Dolor",
+        "body": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      },
+      {
+        "number": "04",
+        "title": "Magna aliqua enim",
+        "tagline": "Ad minim veniam",
+        "stat": "65+",
+        "statLabel": "Sit",
+        "body": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      },
+      {
+        "number": "05",
+        "title": "Quis nostrud",
+        "tagline": "Exercitation ullamco",
+        "stat": "40+",
+        "statLabel": "Amet",
+        "body": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+      }
+    ]
   },
-  "network": {
-    "eyebrow": "The infrastructure behind Speed One",
-    "title": "Built for money that moves globally.",
-    "description": "Speed One runs on the Speed network, a purpose-built blockchain designed to make stablecoin payments fast, reliable, and low-cost at global scale.",
-    "primaryCta": "Explore Network",
-    "secondaryCta": "See Documentation"
+  "about": {
+    "headline": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "cta": "Lorem ipsum",
+    "play": "Play",
+    "mediaAlt": "About placeholder"
   },
-  "startSpending": {
-    "one": "One",
-    "title": "Start spending in minutes",
-    "cta": "Download on iOS"
+  "testimonials": {
+    "title": "Lorem testimonials",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "items": [
+      {
+        "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "name": "Lorem Ipsum",
+        "role": "Dolor sit amet"
+      },
+      {
+        "quote": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+        "name": "Dolor Sit",
+        "role": "Consectetur elit"
+      },
+      {
+        "quote": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
+        "name": "Amet Elit",
+        "role": "Sed eiusmod"
+      }
+    ]
+  },
+  "blog": {
+    "title": "Lorem blog",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "items": [
+      {
+        "title": "Lorem ipsum dolor sit amet",
+        "excerpt": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "date": "Lorem 2026"
+      },
+      {
+        "title": "Ut enim ad minim veniam",
+        "excerpt": "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "date": "Ipsum 2026"
+      },
+      {
+        "title": "Duis aute irure dolor",
+        "excerpt": "In reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "date": "Dolor 2026"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Lorem ipsum dolor sit amet",
+    "description": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "primary": "Lorem ipsum",
+    "secondary": "Dolor sit"
+  },
+  "faq": {
+    "title": "Lorem FAQ",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "items": [
+      {
+        "question": "Lorem ipsum dolor sit amet?",
+        "answer": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "question": "Ut enim ad minim veniam?",
+        "answer": "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      },
+      {
+        "question": "Duis aute irure dolor in reprehenderit?",
+        "answer": "Voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      },
+      {
+        "question": "Excepteur sint occaecat cupidatat?",
+        "answer": "Non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      },
+      {
+        "question": "Sed ut perspiciatis unde omnis?",
+        "answer": "Iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam."
+      }
+    ]
+  },
+  "team": {
+    "title": "Lorem team",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "items": [
+      { "name": "Lorem Ipsum", "role": "Dolor sit" },
+      { "name": "Consectetur Elit", "role": "Amet" },
+      { "name": "Sed Eiusmod", "role": "Tempor" },
+      { "name": "Labore Dolore", "role": "Magna" }
+    ]
   },
   "footer": {
+    "tagline": "Gate Operating System (GOS). Lorem ipsum dolor sit amet.",
     "columns": [
-      { "title": "Products", "links": ["Personal", "Lite", "Core", "Platinum", "Business"] },
-      { "title": "Network", "links": ["Chain", "Partners", "Documentation"] },
-      { "title": "Learn", "links": ["Learn Center"] },
-      { "title": "Company", "links": ["About", "Careers", "Blog", "Brand"] },
-      { "title": "Socials", "links": ["Linkedin", "X (Twitter)"] }
+      { "title": "Lorem", "links": ["Ipsum", "Dolor", "Sit"] },
+      { "title": "Amet", "links": ["Consectetur", "Adipiscing", "Elit"] },
+      { "title": "Sed", "links": ["Eiusmod", "Tempor"] },
+      { "title": "Labore", "links": ["Dolore", "Magna", "Aliqua"] }
     ],
-    "disclaimers": [
-      "Speed is a financial technology company, not a regulated financial institution, bank, money services business or investment advisor.",
-      "Applicable to countries and merchants where Visa cards are accepted. The Speed One Card is issued pursuant to a license from Visa.",
-      "Global account services are powered by third-party banking partners and vary by region.",
-      "Speed does not custody your assets. Stablecoin balances are not bank deposits and the value of any crypto asset may go to zero.",
-      "Cashback and yield rates vary by member tier. Rates are variable and subject to change.",
-      "Earn features provide access to third-party DeFi protocols. Funds are not insured or guaranteed and may lose value.",
-      "Zero-fee transfers refer to Speed routes; third-party fees may apply.",
-      "Stablecoin and yield products are not covered by deposit protection or investor compensation schemes.",
-      "Geographic, regulatory, and other eligibility limits apply, and are subject to change."
-    ],
-    "bottomLinks": [
-      "Your privacy choices",
-      "UK Disclaimer",
-      "Privacy Policy",
-      "Cookie Policy",
-      "Terms of Service"
-    ],
-    "androidComingSoon": "Android coming soon",
-    "qrAlt": "QR code to download the Speed app",
-    "copyright": "©2026 Speed, All Rights Reserved"
-  },
-  "screens": {
-    "balance": {
-      "totalBalance": "Total Balance",
-      "earning": "Earning {amount} this month",
-      "addCash": "Add Cash",
-      "send": "Send",
-      "today": "Today"
-    },
-    "addFunds": {
-      "title": "Add funds",
-      "stablecoins": "Stablecoins",
-      "tokens": "Tokens",
-      "cashDeposit": "Cash deposit"
-    },
-    "card": {
-      "virtual": "Virtual",
-      "physical": "Physical",
-      "holdNearReader": "Hold Near Reader"
-    }
+    "copyright": "©2026 Speed Sistemas. Lorem ipsum."
   },
   "languageSwitcher": {
     "label": "Language",

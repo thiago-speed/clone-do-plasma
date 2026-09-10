@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation'
 import { hasLocale, NextIntlClientProvider } from 'next-intl'
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server'
 import { routing, type Locale } from '@/i18n/routing'
+import { LenisProvider } from '@/components/landing/lenis-provider'
 import '../globals.css'
 
 const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] })
@@ -56,7 +57,7 @@ export async function generateMetadata({
 
 export const viewport: Viewport = {
   colorScheme: 'light',
-  themeColor: 'white',
+  themeColor: '#f7f7f7',
 }
 
 export default async function LocaleLayout({
@@ -84,9 +85,11 @@ export default async function LocaleLayout({
       className={`light ${geistSans.variable} ${geistMono.variable} ${michroma.variable} bg-background`}
     >
       <body className="font-sans antialiased">
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+        <LenisProvider>
+          <NextIntlClientProvider messages={messages}>
+            {children}
+          </NextIntlClientProvider>
+        </LenisProvider>
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
